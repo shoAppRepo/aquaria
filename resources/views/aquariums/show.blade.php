@@ -60,7 +60,7 @@
     <div class="col-sm-6 mt-2">
         <table class="table table-bordered ">
             <tr>
-                <td>営業時間</td>
+                <td style="width:18%">営業時間</td>
                 <td>{{ $aquarium->hour }}</td>
             </tr>
             <tr>
