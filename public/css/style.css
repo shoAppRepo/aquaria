@@ -8,6 +8,9 @@ footer {
   padding: 50px 0;
   background-color: #fafaf3;
   text-align: center;
+  position: relative;/*←絶対位置*/
+  bottom: 100%; /*下に固定*/
+  width: 100%;
 }
 
 /*

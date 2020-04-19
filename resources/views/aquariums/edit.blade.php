@@ -6,7 +6,7 @@
 <div class="mx-auto col-sm-2">
 {!! Form::open(['route' => ['aquariums.upload',$aquarium->id],'method' => 'post','enctype'=>"multipart/form-data"]) !!}
             {!! Form::label('file', '画像', ['class' => 'control-label']) !!}
-            {!! Form::file('file',['accept'=>'.jpeg,.jpg,.png,gif']) !!}
+            {!! Form::file('file',['accept'=>'.jpeg,.jpg,.png,.gif']) !!}
             {!! Form::submit('アップロード', ['class' => 'btn btn-primary my-2']) !!}
 {!! Form::close() !!}
 </div>
