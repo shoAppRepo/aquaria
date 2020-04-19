@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('admission', '料金:') !!}
-                    {!! Form::textarea('admission', $aquarium->admission, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('admission', $aquarium->admission, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('address', '住所:') !!}
@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
-                    {!! Form::textarea('show', $aquarium->show, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('show', $aquarium->show, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content', '紹介文:') !!}
