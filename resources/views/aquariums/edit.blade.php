@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('admission', '料金:') !!}
-                    {!! Form::text('admission', $aquarium->admission, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('admission', $aquarium->admission, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('address', '住所:') !!}
@@ -35,11 +35,11 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
-                    {!! Form::text('show', $aquarium->show, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('show', $aquarium->show, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content', '紹介文:') !!}
-                    {!! Form::text('content', $aquarium->content, ['class' => 'form-control','rows' => '5']) !!}
+                    {!! Form::textarea('content', $aquarium->content, ['class' => 'form-control','rows' => '5']) !!}
                     <!--入力フォームのサイズを変えたい-->
                 </div>
         
