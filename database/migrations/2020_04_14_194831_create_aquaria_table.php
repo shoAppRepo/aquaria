@@ -22,7 +22,8 @@ class CreateAquariaTable extends Migration
             $table->string('content')->nullable();
             $table->string('hour')->nullable();
             $table->string('show')->nullable();
-            $table->string('admission')->nullable();
+            $table->string('admission_normal')->nullable();
+            $table->string('admission_passport')->nullable();
             $table->timestamps();
         });
     }

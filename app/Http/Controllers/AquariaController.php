@@ -80,7 +80,8 @@ class AquariaController extends Controller
         
         $aquarium->name = $request->name;
         $aquarium->hour = $request->hour;
-        $aquarium->admission = $request->admission;
+        $aquarium->admission_normal = $request->admission_normal;
+        $aquarium->admission_passport = $request->admission_passport;
         $aquarium->address = $request->address;
         $aquarium->url = $request->url;
         $aquarium->show = $request->show;

@@ -22,8 +22,12 @@
                     {!! Form::text('hour', $aquarium->hour, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('admission', '料金:') !!}
-                    {!! Form::textarea('admission', $aquarium->admission, ['class' => 'form-control','rows' => '5']) !!}
+                    {!! Form::label('admission_normal', '一般料金:') !!}
+                    {!! Form::textarea('admission_normal', $aquarium->admission_normal, ['class' => 'form-control','rows' => '5']) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('admission_passport', '年間パスポート:') !!}
+                    {!! Form::textarea('admission_passport', $aquarium->admission_passport, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('address', '住所:') !!}

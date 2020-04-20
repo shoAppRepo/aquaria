@@ -64,8 +64,12 @@
                 <td>{{ $aquarium->hour }}</td>
             </tr>
             <tr>
-                <td>料金</td>
-                <td>{!! nl2br($aquarium->admission) !!}</td>
+                <td>一般料金</td>
+                <td>{!! nl2br($aquarium->admission_normal) !!}</td>
+            </tr>
+            <tr>
+                <td>年間パスポート</td>
+                <td>{!! nl2br($aquarium->admission_passport) !!}</td>
             </tr>
             <tr>
                 <td>住所</td>

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aquarium extends Model
 {
-    protected $fillable = ['name','address','url','content','hour','show','admission'];
+    protected $fillable = ['name','address','url','content','hour','show','admission_normal','admission_passport'];
 
     //コメントの取得
     public function reviews()
