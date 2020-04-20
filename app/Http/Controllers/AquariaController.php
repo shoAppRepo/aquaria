@@ -29,7 +29,6 @@ class AquariaController extends Controller
         $stars = $reviews->pluck('star');
         $avg_star = $stars->avg();
         
-        
         $data=[
             'aquarium'=>$aquarium,
             'reviews'=>$reviews,

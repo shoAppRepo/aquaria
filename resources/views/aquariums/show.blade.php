@@ -53,7 +53,7 @@
                 <p style="font-size:30px">No Image</p>
             </div>
             @endif
-            <p>{{ $aquarium->content }}</p>
+            <p>{!! nl2br($aquarium->content) !!}</p>
         </div>
     </div>
     
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>料金</td>
-                <td>{{ $aquarium->admission }}</td>
+                <td>{!! nl2br($aquarium->admission) !!}</td>
             </tr>
             <tr>
                 <td>住所</td>
@@ -77,7 +77,7 @@
             </tr>
             <tr>
                 <td>ショー</td>
-                <td>{{ $aquarium->show }}</td>
+                <td>{!! nl2br($aquarium->show) !!}</td>
             </tr>
         </table>
     </div>
