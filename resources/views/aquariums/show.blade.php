@@ -65,11 +65,7 @@
             </tr>
             <tr>
                 <td>一般料金</td>
-                <td>{!! nl2br($aquarium->admission_normal) !!}</td>
-            </tr>
-            <tr>
-                <td>年間パスポート</td>
-                <td>{!! nl2br($aquarium->admission_passport) !!}</td>
+                <td>{!! nl2br($aquarium->normal) !!}</td>
             </tr>
             <tr>
                 <td>住所</td>

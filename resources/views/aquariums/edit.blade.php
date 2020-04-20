@@ -22,14 +22,6 @@
                     {!! Form::text('hour', $aquarium->hour, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('admission_normal', '一般料金:') !!}
-                    {!! Form::textarea('admission_normal', $aquarium->admission_normal, ['class' => 'form-control','rows' => '5']) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::label('admission_passport', '年間パスポート:') !!}
-                    {!! Form::textarea('admission_passport', $aquarium->admission_passport, ['class' => 'form-control']) !!}
-                </div>
-                <div class="form-group">
                     {!! Form::label('address', '住所:') !!}
                     {!! Form::text('address', $aquarium->address, ['class' => 'form-control']) !!}
                 </div>
@@ -38,13 +30,16 @@
                     {!! Form::text('url', $aquarium->url, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
+                    {!! Form::label('normal', '一般料金:') !!}
+                    {!! Form::text('normal', $aquarium->normal, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
                     {!! Form::textarea('show', $aquarium->show, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content', '紹介文:') !!}
                     {!! Form::textarea('content', $aquarium->content, ['class' => 'form-control','rows' => '5']) !!}
-                    <!--入力フォームのサイズを変えたい-->
                 </div>
         
                 {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}

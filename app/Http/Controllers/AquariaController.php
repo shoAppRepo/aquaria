@@ -80,13 +80,13 @@ class AquariaController extends Controller
         
         $aquarium->name = $request->name;
         $aquarium->hour = $request->hour;
-        $aquarium->admission_normal = $request->admission_normal;
-        $aquarium->admission_passport = $request->admission_passport;
         $aquarium->address = $request->address;
         $aquarium->url = $request->url;
         $aquarium->show = $request->show;
         $aquarium->content = $request->content;
         $aquarium->area_id = $request->area_id;
+        $aquarium->normal = $request->normal;
+        $aquarium->passport = $request->passport;
         
         $aquarium->save();
         
@@ -114,7 +114,8 @@ class AquariaController extends Controller
         $aquarium->update([
             'name'=>$request->name,
             'hour'=>$request->hour,
-            'admission'=>$request->admission,
+            'normal'=>$request->normal,
+            'passport'=>$request->passport,
             'address'=>$request->address,
             'url'=>$request->url,
             'show'=>$request->show,
