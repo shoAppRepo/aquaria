@@ -5,18 +5,19 @@
             <h1>Gallery</h1>
           </div>
             <form
-              class="form-inline justify-content-center"
+              class="d-flex justify-content-center"
               v-on:submit.prevent="fetchImagesFromFlickr"
              >
                 <input
                   type="search" name="search"
-                  class="form-control mr-sm-2"
+                  class="form-control"
+                  style="width:12rem"
                   placeholder="キーワードを入力"
                   aria-label="Search"
                 >
                 <button
                   type="submit"
-                  class="btn btn-primary"
+                  class="btn btn-primary ml-2"
                   >
                     検索
                 </button>

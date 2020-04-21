@@ -12,7 +12,7 @@
     
 
 <div class="main"></div>
-<div class="text-second" style="margin-top:50px;width:100vw">
+<div class="text-second" style="width:100vw">
     <h2>どのエリアに行く？</h2>
 </div>
     
