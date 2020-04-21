@@ -31,10 +31,16 @@
             <p>評価はまだありません</p>
             @endif
         </div>
-        <div class="card-body mx-auto">
+        <div class="card-body">
             @if(count($images))
             <div id="picture">
-                <carousel>
+                <carousel
+                    :per-page="1"
+                    :navigation-enabled="true"
+                    navigation-prev-label="〈"
+                    navigation-next-label="〉"
+                    :speed="1000"
+                >
                     @foreach ($images as $image)
                     <slide><span class="label"><img src="{{ $image->image_path }}"></span></slide>
                     @endforeach
@@ -56,8 +62,12 @@
                 <td>{{ $aquarium->hour }}</td>
             </tr>
             <tr>
-                <td>料金</td>
-                <td>{{ $aquarium->admission }}</td>
+                <td>一般料金</td>
+                <td>{{ $aquarium->normal }}</td>
+            </tr>
+            <tr>
+                <td>年間パスポート</td>
+                <td>{{ $aquarium->passport }}</td>
             </tr>
             <tr>
                 <td>住所</td>

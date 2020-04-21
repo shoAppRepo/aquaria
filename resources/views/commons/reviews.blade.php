@@ -22,7 +22,7 @@
                 </div>
                 </div>
                 <div class="mx-auto">
-                    <p style="border:solid 1px silver;width:100%;height:10rem">{!! nl2br(e($review->content)) !!}</p>
+                    <p style="border:solid 1px silver;width:100%">{!! nl2br(e($review->content)) !!}</p>
                 </div>
             </div>
         </li>

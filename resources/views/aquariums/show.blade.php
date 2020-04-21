@@ -44,12 +44,12 @@
                     :speed="1000"
                 >
                     @foreach ($images as $image)
-                    <slide><span class="label"><img src="{{ $image->image_path }}"></span></slide>
+                    <slide><span class="label"><img src="{{ $image->image_path }}"</span></slide>
                     @endforeach
                 </carousel>
             </div>
             @else
-            <div style="width:20rem;height:20rem;background-color:#CCFFFF;text-align:center">
+            <div class="mx-auto" style="width:18rem;height:20rem;background-color:#CCFFFF;text-align:center">
                 <p style="font-size:30px">No Image</p>
             </div>
             @endif
@@ -60,12 +60,16 @@
     <div class="col-sm-6 mt-2">
         <table class="table table-bordered ">
             <tr>
-                <td style="width:18%">営業時間</td>
+                <td>営業時間</td>
                 <td>{{ $aquarium->hour }}</td>
             </tr>
             <tr>
                 <td>一般料金</td>
-                <td>{!! nl2br($aquarium->normal) !!}</td>
+                <td>{{ $aquarium->normal }}</td>
+            </tr>
+            <tr>
+                <td>年間パスポート</td>
+                <td>{{ $aquarium->passport }}</td>
             </tr>
             <tr>
                 <td>住所</td>
@@ -73,11 +77,11 @@
             </tr>
             <tr>
                 <td>URL</td>
-                <td><a href="{{ $aquarium->url }}" target="_blank">{{ $aquarium->url }}</a></td>
+                <td>{{ $aquarium->url }}</td>
             </tr>
             <tr>
                 <td>ショー</td>
-                <td>{!! nl2br($aquarium->show) !!}</td>
+                <td>{{ $aquarium->show }}</td>
             </tr>
         </table>
     </div>

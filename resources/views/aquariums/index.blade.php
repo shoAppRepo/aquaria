@@ -4,7 +4,7 @@
 
     
     <div class="top_image">
-    <img src="/images/penguin1-min.jpeg" style="width:100%;height:100vh">
+    <img src="/images/penguin1-min.jpeg" class="topImage_size"">
     </div>
     <div class="top__text-box">
       <h1 class="top__title">Enjoy Aquaria!</h1>

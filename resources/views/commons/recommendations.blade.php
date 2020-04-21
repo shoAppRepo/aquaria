@@ -23,10 +23,13 @@
                         
                         <div class="mx-auto">
                             <div class="d-flex justify-content-center">
-                                <p class="m-2"><img src="{{ $recommendation->image_path }}"></img></p>
-                                <p class="m-0">{{ $recommendation->name }}</p>
+                                <p class="m-2"><img src="{{ $recommendation->image_path }}" style="width:20rem"></img></p>
                             </div>
-                         　      <p class="m-0" style="border:solid 1px silver;width:100%;height:7rem">{!! nl2br(e($recommendation->content)) !!}</p>
+                            <div class="">
+                                <p class="m-0 text-center">{{ $recommendation->name }}</p>
+                                <p class="mt-1" style="border:solid 1px silver;width:100%">{!! nl2br(e($recommendation->content)) !!}</p>
+                            </div>
+                         　     
                         </div>
                      </div>
                      </div>
