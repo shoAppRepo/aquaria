@@ -75,7 +75,7 @@
             </tr>
             <tr>
                 <td>URL</td>
-                <td><a href="{{ $aquarium->url }}">{{ $aquarium->url }}</a></td>
+                <td><a target="_blank" href="{{ $aquarium->url }}">{{ $aquarium->url }}</a></td>
             </tr>
             <tr>
                 <td>ショー</td>
