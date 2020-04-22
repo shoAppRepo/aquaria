@@ -1,9 +1,7 @@
 <div id="app" class="container">
     <div class="row justify-content-center">
         <div>
-          <div class="text-second mb-3" style="margin-top:50px;width:100vw">
-            <h1>Gallery</h1>
-          </div>
+            <h1 class="text-second" style="margin-top:50px;width:100vw">Gallery</h1>
             <form
               class="d-flex justify-content-center"
               v-on:submit.prevent="fetchImagesFromFlickr"

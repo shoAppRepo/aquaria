@@ -1,9 +1,7 @@
 /*
  *基本設定
  */
-body{
-  background-color:red;
-}
+
 footer {
   padding: 50px 0;
   background-color: #fafaf3;
@@ -21,7 +19,7 @@ footer {
   border-bottom: none;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:480px) {
 /*
  *ボタン装飾
  */
@@ -105,11 +103,9 @@ footer {
   font-size: 15px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-}
-
 .text-second{
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size:30px;
+  font-size:35px;
   color: #6cb4e4;
   text-align: center;
   border-top: solid 2px #6cb4e4;
@@ -117,6 +113,9 @@ footer {
   background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
   background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
+}
+
+
 
 /*
  *水族館の紹介写真/カルーセル
@@ -180,7 +179,7 @@ a {
  *真ん中のコンテンツ
  */
 .main{
-  margin-top:350px;
+  margin-top:400px;
   margin-bottom: 100px;
 }
 
@@ -206,7 +205,6 @@ a {
 }
 
 .top__title {
-  margin-bottom: 10px;
   font-size: 3rem;
   line-height: 77px;
   letter-spacing: 4px;
@@ -215,5 +213,15 @@ a {
 .top__catchphrase {
   font-size: 15px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.text-second{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size:25px;
+  color: #6cb4e4;
+  text-align: center;
+  border-top: solid 2px #6cb4e4;
+  border-bottom: solid 2px #6cb4e4;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
 }

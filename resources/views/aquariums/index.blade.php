@@ -12,9 +12,7 @@
     </div>
 
 <div class="main"></div>
-    <div class="text-second" style="margin-top:50px;width:100vw">
-        <h2>どこの水族館に行く？</h2>
-    </div>
+<h2 class="text-second" style="width:100vw">どのエリアに行く？</h2>
     
 <!--メインエリア-->
 <div class="container">

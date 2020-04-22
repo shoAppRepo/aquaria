@@ -12,9 +12,8 @@
     
 
 <div class="main"></div>
-<div class="text-second" style="width:100vw">
-    <h2>どのエリアに行く？</h2>
-</div>
+<h2 class="text-second" style="width:100vw">どのエリアに行く？</h2>
+
     
 
     
