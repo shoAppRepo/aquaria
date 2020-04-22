@@ -31,11 +31,11 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('normal', '一般料金:') !!}
-                    {!! Form::text('normal', $aquarium->normal, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('normal', $aquarium->normal, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('passport', '年間パスポート:') !!}
-                    {!! Form::text('passport', $aquarium->passport, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('passport', $aquarium->passport, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
