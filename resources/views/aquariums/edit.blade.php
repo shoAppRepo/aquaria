@@ -34,6 +34,10 @@
                     {!! Form::text('normal', $aquarium->normal, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
+                    {!! Form::label('passport', '年間パスポート:') !!}
+                    {!! Form::text('passport', $aquarium->passport, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
                     {!! Form::textarea('show', $aquarium->show, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
