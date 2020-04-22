@@ -53,7 +53,7 @@
                 <p style="font-size:30px">No Image</p>
             </div>
             @endif
-            <p>{!! nl2br($aquarium->content) !!}</p>
+            <p>{!! nl2br(e($aquarium->content)) !!}</p>
         </div>
     </div>
     
@@ -65,11 +65,11 @@
             </tr>
             <tr>
                 <td>一般料金</td>
-                <td>{{ $aquarium->normal }}</td>
+                <td>{!! nl2br(e($aquarium->normal)) !!}</td>
             </tr>
             <tr>
                 <td>年間パスポート</td>
-                <td>{{ $aquarium->passport }}</td>
+                <td>{!! nl2br(e($aquarium->passport)) !!}</td>
             </tr>
             <tr>
                 <td>住所</td>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
                 <td>ショー</td>
-                <td>{{ $aquarium->show }}</td>
+                <td>{!! nl2br(e($aquarium->show)) !!}</td>
             </tr>
         </table>
     </div>
