@@ -44,7 +44,7 @@
                     :speed="1000"
                 >
                     @foreach ($images as $image)
-                    <slide><span class="label"><img src="{{ $image->image_path }}"</span></slide>
+                    <slide><span class="label"><img src="{{ $image->image_path }}"></span></slide>
                     @endforeach
                 </carousel>
             </div>
@@ -77,7 +77,7 @@
             </tr>
             <tr>
                 <td>URL</td>
-                <td>{{ $aquarium->url }}</td>
+                <td><a href="{{ $aquarium->url }}">{{ $aquarium->url }}</a></td>
             </tr>
             <tr>
                 <td>ショー</td>
