@@ -20,17 +20,20 @@
                     {!! Form::text('hour', '〇〇:〇〇～〇〇:〇〇', ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('admission', '料金:') !!}
-                    {!! Form::text('admission', null, ['class' => 'form-control']) !!}
-                </div>
-                
-                <div class="form-group">
                     {!! Form::label('address', '住所:') !!}
                     {!! Form::text('address', null, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('url', 'ホームページ:') !!}
                     {!! Form::text('url', null, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('normal', '一般料金:') !!}
+                    {!! Form::textarea('normal', null, ['class' => 'form-control','rows' => '5']) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('passport', 'パスポート:') !!}
+                    {!! Form::textarea('passport', null, ['class' => 'form-control','rows' => '5']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('show', 'ショー:') !!}
