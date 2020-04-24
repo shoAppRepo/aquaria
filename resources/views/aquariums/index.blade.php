@@ -4,7 +4,7 @@
 
     
     <div class="top_image">
-    <img src="/images/penguin1-min.jpeg" class="topImage_size"">
+    <img src="/images/penguin1-min.jpeg" class="topImage_size">
     </div>
     <div class="top__text-box">
       <h1 class="top__title">Enjoy Aquaria!</h1>
@@ -27,11 +27,11 @@
     <div class="row col-sm-12 mt-2 mx-auto d-flex justify-content-center text-center">
         @if(count($aquariums) > 0)
         @foreach($aquariums as $aquarium)
-        <div>
-        <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="card ml-2 mt-2" style="display:inline-block;height:20rem;width:15rem">
+        <div class="card">
+        <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="ml-2 mt-2" style="display:inline-block;height:10rem;width:15rem">
             <div class="card-body">
-                <h5 class="card-header" style="font-size:15px">{{ $aquarium->name }}</h5>
-                <p class="card-text">{!! nl2br(e($aquarium->content)) !!}</p>
+                <p class="card-title" style="font-size:15px">{{ $aquarium->name }}</p>
+                <p class="card-text mt-3">{!! substr(nl2br(e($aquarium->content)),0,55) !!}</p>
             </div>
         </a>
         </div>
@@ -47,6 +47,6 @@
     </div>
     @endif
 </div>
-</div>
+
 
 @endsection

@@ -17,7 +17,10 @@ class AquariaController extends Controller
         $area=Area::find($id);
         $aquariums=$area->aquariums()->orderBy('created_at','desc')->paginate(12);
 
-        return view('aquariums.index',compact('aquariums'));
+        $data=[
+            'aquariums' => $aquariums,
+        ];
+        return view('aquariums.index',$data);
     }
     
     public function show($id){
