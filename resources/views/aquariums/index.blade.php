@@ -29,10 +29,12 @@
         @foreach($aquariums as $aquarium)
 
         <div href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="card ml-2 mt-2" style="display:inline-block;height:17rem;width:15rem">
-            <div class="card-body clearfix">
+            <div class="card-body clearfix" style="height:100%">
                 <p class="card-header" style="font-size:15px">{{ $aquarium->name }}</p>
                 <p class="card-text mt-3 text-left">{!! mb_substr(nl2br(e($aquarium->content)),0,58) !!}</p>
-                 <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="btn btn-primary float-right">詳細</a>
+                <div class="mb-0">
+                <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="btn btn-primary float-right">詳細</a>
+                </div>
             </div>
         </div>
 
