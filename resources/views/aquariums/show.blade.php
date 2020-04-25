@@ -8,7 +8,7 @@
 <div class="row d-flex justify-content-between">
     <div class="card col-sm-5 mt-2">
         <div class="card-header">
-            <h3 class="card-title">{{ $aquarium->name }}<span>{{ $avg_star }}</span></h3>
+            <h3 class="card-title">{{ $aquarium->name }}</h3>
             @if($avg_star == 1)
             <div class="d-flex justify-content-end">
             <i class="fas fa-star"></i>

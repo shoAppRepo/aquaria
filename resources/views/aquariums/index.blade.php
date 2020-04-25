@@ -27,14 +27,15 @@
     <div class="row col-sm-12 mt-2 mx-auto d-flex justify-content-center text-center">
         @if(count($aquariums) > 0)
         @foreach($aquariums as $aquarium)
-        <div class="card">
-        <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="ml-2 mt-2" style="display:inline-block;height:12rem;width:15rem">
-            <div class="card-body">
-                <p class="card-title" style="font-size:15px">{{ $aquarium->name }}</p>
-                <p class="card-text mt-3">{!! mb_substr(nl2br(e($aquarium->content)),0,55) !!}</p>
+
+        <div href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="card ml-2 mt-2" style="display:inline-block;height:17rem;width:15rem">
+            <div class="card-body clearfix">
+                <p class="card-header" style="font-size:15px">{{ $aquarium->name }}</p>
+                <p class="card-text mt-3 text-left">{!! mb_substr(nl2br(e($aquarium->content)),0,58) !!}</p>
+                 <a href="{{ route('aquariums.show',['id'=>$aquarium->id]) }}" class="btn btn-primary float-right">詳細</a>
             </div>
-        </a>
         </div>
+
         @endforeach
     </div>
     <div class="d-flex justify-content-center mt-2">
