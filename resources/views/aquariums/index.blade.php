@@ -19,7 +19,7 @@
     <!--検索-->
     <div class="d-flex justify-content-center mt-3">
         {!! Form::open(['route' => ['search.index'],'method' => 'get']) !!}
-            {!! Form::text('search', null) !!}
+            {!! Form::text('search', null,["placeholder"=>"水族館名を入力"]) !!}
         {!! Form::submit('検索',['class' => "btn btn-primary"]) !!}
         {!! Form::close() !!}
     </div>

@@ -18,7 +18,7 @@
     </div>
     <div class="form-group m-0">
         {!! Form::label('content', 'コメント', ['class' => 'control-label']) !!}
-        {!! Form::textarea('content',null,['class' => 'form-control']) !!}
+        {!! Form::textarea('content',null,["placeholder"=>"191文字以下"],['class' => 'form-control']) !!}
     </div>   
     <div class="form-group">
         {!! Form::submit('投稿', ['class' => 'btn btn-primary my-2']) !!}
