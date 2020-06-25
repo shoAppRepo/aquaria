@@ -127,7 +127,7 @@ class AquariaController extends Controller
         
         return redirect('aquariums/'.$id.'/show');
     }
-    
+
     //編集ページの画像追加
     public function upload(Request $request, $id){
       $image = new Image;
@@ -170,12 +170,13 @@ class AquariaController extends Controller
         return back();
     }
     
-    /*public function delete_aquarium($id){
+    public function delete_aquarium($id){
         $aquarium = Aquarium::find($id);
+        
         $aquarium->delete();
         
         return redirect('/');
-    }*/
+    }
     
     public function ranking(){
         $aquariums = Aquarium::all();

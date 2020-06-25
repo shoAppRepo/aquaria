@@ -50,6 +50,9 @@
         
 {!! Form::close() !!}
 </div>
+{!! Form::open(['route' => ['delete_aquarium',$aquarium->id], 'method' => 'delete']) !!}
+        {!! Form::submit('Delete', ['class' => "btn btn-danger btn-sm mt-2"]) !!}
+{!! Form::close() !!}
 <div class="my-5 d-flex justify-content-between">
     @if($images)
     @foreach ($images as $image)
